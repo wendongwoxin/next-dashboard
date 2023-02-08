@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         'muli': 'muli',
       },
+      height: {
+        100: '25rem'
+      }
     },
   },
   plugins: [],

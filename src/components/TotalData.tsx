@@ -30,11 +30,11 @@ export default function TotalData() {
     <CountUp end={+value} separator="," />
   );
   return (
-    <div className=" w-full p-8 grid grid-cols-4 gap-4 max-[991px]:grid-cols-2 max-[576px]:grid-cols-1 mb-12">
+    <div className="w-full p-8 grid grid-cols-4 gap-4 max-[991px]:grid-cols-2 max-[576px]:grid-cols-1 mb-12">
       {dataList.map((item) => {
         return (
           <div
-            className={`rounded-[10px] px-8 py-10 total-data`}
+            className="rounded-[10px] px-8 py-10 total-data max-[576px]:py-5 max-[576px]:px-4"
             key={item.name}
           >
             <Statistic

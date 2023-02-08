@@ -14,7 +14,7 @@ export default function MainContent(props: Props) {
         <UserCenter />
       </div>
       <div className="main-content__container">
-        <div className="w-full p-8 bg-white">{props.route}</div>
+        <div className="w-full p-8 bg-white max-[576px]:p-0">{props.route}</div>
       </div>
     </section>
   );

@@ -13,3 +13,21 @@ body {
     font-size: 14px;
     background: #f7faff;
 }
+
+/* 滚动条样式 */
+.sidebar::-webkit-scrollbar-track,body::-webkit-scrollbar-track {
+    background-color: #ddd
+}
+
+.sidebar::-webkit-scrollbar,body::-webkit-scrollbar {
+    width: 6px;
+    background-color: #ddd
+}
+
+.sidebar::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb {
+    background-color: #f8dbdd
+}
+
+body::-webkit-scrollbar {
+    width: 8px
+}
