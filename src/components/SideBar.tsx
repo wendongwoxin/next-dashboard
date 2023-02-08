@@ -8,8 +8,9 @@ import {
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
-import { useState } from "react";
-
+import type { RootState } from "@/store";
+import { useSelector, useDispatch } from "react-redux";
+import { closeMenu } from "../store/slices/menuSlice";
 type MenuItem = Required<MenuProps>["items"][number];
 
 function getItem(
@@ -57,14 +58,18 @@ const onClick: MenuProps["onClick"] = (e) => {
   console.log("click ", e);
 };
 export default function SideBar() {
-  const [hello, setHello] = useState("");
+  const status = useSelector((state: RootState) => state.menu.status);
+  const dispatch = useDispatch();
+  const _close = () => {
+    dispatch(closeMenu());
+  };
   return (
-    <nav className="sidebar">
+    <nav className={status ? "sidebar left-0" : "sidebar"}>
       <div className="flex justify-between logo">
         <a href="#" className="font-bold text-xl text-[#5B6BDC]">
           wendongwoxin
         </a>
-        <div className="sidebar-close">
+        <div className="sidebar-close" onClick={_close}>
           <CloseOutlined />
         </div>
       </div>
