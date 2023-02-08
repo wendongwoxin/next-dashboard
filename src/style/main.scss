@@ -64,14 +64,19 @@
       }
     }
   }
+  &__container {
+    min-height: 68vh;
+    transition: 0.5s;
+    margin: 30px;
+  }
 }
 
 @media (max-width: 991px) {
   .main-content {
     padding: 90px 0 100px;
-    &__header {
+
+    &__container {
       margin: 0;
-      padding: 20px;
     }
   }
 }
@@ -79,5 +84,12 @@
 @media (max-width: 575.98px) {
   .main-content {
     padding: 120px 0 100px;
+    &__header {
+      margin: 0;
+      padding: 20px;
+    }
+    &__container {
+      margin-bottom: 20px;
+    }
   }
 }

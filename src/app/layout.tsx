@@ -21,8 +21,7 @@ export default function RootLayout({
       <body>
         <Provider store={store}>
           <SideBar />
-          <MainContent comp={children} ></MainContent>
-          {/* {children} */}
+          <MainContent route={children} ></MainContent>
         </Provider>
       </body>
     </html>

@@ -10,7 +10,7 @@ export default function MobileIcon() {
   return (
     <div
       onClick={_openMenu}
-      className="sidebar-icon min-[576px]:hidden max-[576px]:h-9 max-[576px]:leading-9"
+      className="sidebar-icon min-[991px]:hidden max-[576px]:h-9 max-[576px]:leading-9"
     >
       <MenuOutlined />
     </div>

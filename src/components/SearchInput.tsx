@@ -21,7 +21,7 @@ export default function SearchInput() {
   };
 
   return (
-    <div className="search-input max-[576px]:hidden">
+    <div className="search-input max-[853px]:hidden">
       <input
         value={searchText}
         onChange={(e) => setSearchText(e.target.value)}
